@@ -1,7 +1,6 @@
 {
   "targets": {
-    "ie": "9",
-    "chromium": "37",
+    "ie": "10",
     "android": "5"
   },
   "sourceType": "script",
@@ -19,6 +18,18 @@
   "plugins": [
     "@babel/plugin-transform-arrow-functions",
     "transform-remove-strict-mode",
-    "@babel/plugin-transform-reserved-words"
+    "@babel/plugin-transform-reserved-words",
+    "babel-plugin-transform-import-meta",
+    "lodash",
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
   ]
 }
