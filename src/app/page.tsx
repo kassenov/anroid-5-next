@@ -1,4 +1,3 @@
-'use client'
 import { BeadIconAnimated } from "./BeadIconAnimated";
 import { QRCode } from "./QRCode";
 import React from 'react'

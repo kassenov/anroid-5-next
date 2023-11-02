@@ -1,3 +1,4 @@
+'use client'
 import { QRCode as ReactQRCode } from 'react-qrcode-logo'
 import React, { useEffect, useRef, useState } from 'react'
 import QRCodeStyling from "qr-code-styling-new";
