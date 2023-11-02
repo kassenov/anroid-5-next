@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     transpilePackages: [
+        "next",
         "react-qrcode-logo",
         "qr-code-styling-new"
     ],

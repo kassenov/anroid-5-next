@@ -4,7 +4,7 @@
     "chromium": "37",
     "android": "5"
   },
-  "sourceType": "unambiguous",
+  "sourceType": "script",
   "presets": [
     "next/babel", 
     "@babel/preset-react", 
