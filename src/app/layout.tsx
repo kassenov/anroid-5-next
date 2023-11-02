@@ -18,7 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script src='bower_components/canvas-5-polyfill/canvas.js' type='text/javascript'></Script>
       <body className={inter.className}>{children}</body>
     </html>
   )

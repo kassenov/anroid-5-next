@@ -14,8 +14,7 @@
     "next": "^14.0.1",
     "bootstrap": "^4.6.0",
     "react-qrcode-logo": "^2.9.0",
-    "canvas-5-polyfill": "^0.1.5",
-    "html2canvas": "^1.4.1"
+    "qr-code-styling-new": "^1.6.1"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
