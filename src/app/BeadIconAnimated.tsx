@@ -48,3 +48,5 @@ export const BeadIconAnimated = React.memo((props: React.SVGProps<SVGSVGElement>
     </svg>
   )
 })
+
+BeadIconAnimated.displayName = "BeadIconAnimated"
