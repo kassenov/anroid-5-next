@@ -26,7 +26,7 @@ export function QRCode() {
     if (ref.current) {
       qrCode.append(ref.current);
     }
-  }, [ref.current]);
+  }, []);
 
   useEffect(() => {
     qrCode.update({

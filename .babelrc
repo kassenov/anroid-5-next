@@ -1,0 +1,24 @@
+{
+  "targets": {
+    "ie": "9",
+    "chromium": "37",
+    "android": "5"
+  },
+  "sourceType": "unambiguous",
+  "presets": [
+    "next/babel", 
+    "@babel/preset-react", 
+    "@babel/preset-typescript", 
+    [
+      "@babel/preset-env", 
+      {
+        "forceAllTransforms": true
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-arrow-functions",
+    "transform-remove-strict-mode",
+    "@babel/plugin-transform-reserved-words"
+  ]
+}
