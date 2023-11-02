@@ -1,9 +1,9 @@
 'use client'
 
-import "@netless/canvas-polyfill";
+// import "@netless/canvas-polyfill";
 import { BeadIconAnimated } from "./BeadIconAnimated";
 import { QRCode } from "./QRCode";
-//
+
 export default function Home() {
   return (
     <main>
