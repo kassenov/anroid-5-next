@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 // import { Inter } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css';
-// import './globals.css'
+import './globals.css'
 import Script from 'next/script';
 import React from 'react'
 
