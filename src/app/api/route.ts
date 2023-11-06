@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation';
  
 export async function GET(request: Request) {
+    redirect('https://www.google.com/');
     // Parse the user agent from the request headers
     const userAgent = request.headers.get('user-agent');
     // Check if the user agent contains "Chrome/39" or lower
