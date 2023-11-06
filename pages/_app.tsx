@@ -1,10 +1,13 @@
 import { BeadIconAnimated } from "../BeadIconAnimated";
 import { QRCode } from "../QRCode";
-import React from 'react'
+
+import React, { useState } from 'react';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 // import { GetServerSideProps } from "next";
 
 import '../globals.css'
+import 'bootstrap/dist/css/bootstrap.css';
 
 // export const getServerSideProps = (async (context) => {
 //   return {
@@ -16,6 +19,10 @@ import '../globals.css'
 // }) satisfies GetServerSideProps
 
 export default function Home() {
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
+
   return (
     <main>
       <h1 className="text-danger">Hello Bootstrap</h1>
@@ -25,7 +32,41 @@ export default function Home() {
       <BeadIconAnimated/>
       <QRCode />
 
-      <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div className="modal" tab-index="-1" role="dialog">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title">Modal title</h5>
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-primary">Save changes</button>
+        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+      <Button color="danger" onClick={toggle}>TEST</Button>
+      <Modal isOpen={modal} toggle={toggle}>
+        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+        <ModalBody>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </ModalBody>
+        <ModalFooter>
+          <Button color="primary" onClick={toggle}>Do Something</Button>{' '}
+          <Button color="secondary" onClick={toggle}>Cancel</Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+
+      {/* <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
   
   <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
@@ -55,7 +96,7 @@ export default function Home() {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
     </main>
   )
