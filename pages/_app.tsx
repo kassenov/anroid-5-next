@@ -4,6 +4,8 @@ import { QRCode } from "../QRCode";
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
+import io, { Socket } from 'socket.io-client'
+
 // import { GetServerSideProps } from "next";
 
 import '../globals.css'
@@ -22,6 +24,15 @@ export default function Home() {
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
+
+  const socket = io("https://9781-2604-3d08-9d86-4700-6513-f248-64a0-111d.ngrok-free.app", {
+    autoConnect: false,
+    auth: {
+      token: "test",
+    },
+  })
+
+  socket.connect()
 
   return (
     <main>
