@@ -1,5 +1,5 @@
-import { BeadIconAnimated } from "./BeadIconAnimated";
-import { QRCode } from "./QRCode";
+import { BeadIconAnimated } from "../BeadIconAnimated";
+import { QRCode } from "../QRCode";
 import React from 'react'
 
 import "react-app-polyfill/ie11";
