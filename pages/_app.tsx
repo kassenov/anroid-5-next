@@ -10,6 +10,7 @@ import io, { Socket } from 'socket.io-client'
 
 import '../globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
+import Script from "next/script";
 
 // export const getServerSideProps = (async (context) => {
 //   return {
@@ -25,7 +26,8 @@ export default function Home() {
 
   const toggle = () => setModal(!modal);
 
-  const socket = io("https://9781-2604-3d08-9d86-4700-6513-f248-64a0-111d.ngrok-free.app", {
+  const connect = () => {
+    const socket = io("https://9781-2604-3d08-9d86-4700-6513-f248-64a0-111d.ngrok-free.app", {
     autoConnect: false,
     auth: {
       token: "test",
@@ -33,9 +35,11 @@ export default function Home() {
   })
 
   socket.connect()
+  }
 
   return (
     <main>
+
       <h1 className="text-danger">Hello Bootstrap</h1>
       <h1 className="text-3xl font-bold underline">
         Hello Tailwind!
@@ -130,6 +134,9 @@ export default function Home() {
     </div>
   </div>
 </div> */}
+
+    <Script src="/socket.io/socket.io.js"></Script>
+    <Script onLoad={() => connect()}/>
 
     </main>
   )
