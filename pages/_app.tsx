@@ -26,7 +26,6 @@ export default function Home() {
 
   const toggle = () => setModal(!modal);
 
-  const connect = () => {
     const socket = io("https://9781-2604-3d08-9d86-4700-6513-f248-64a0-111d.ngrok-free.app", {
       autoConnect: false,
       auth: {
@@ -35,7 +34,6 @@ export default function Home() {
     })
 
     socket.connect()
-  }
 
   return (
     <main>
@@ -134,9 +132,6 @@ export default function Home() {
     </div>
   </div>
 </div> */}
-
-    <Script src="/socket.io/socket.io.js"></Script>
-    <Script onLoad={() => connect()}/>
 
     </main>
   )

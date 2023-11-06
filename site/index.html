@@ -8,16 +8,9 @@
 <body>
     <div id="canvas"></div>
     <div class="demo"></div>
-    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
     <script type="text/javascript">
-        const socket = io("https://9781-2604-3d08-9d86-4700-6513-f248-64a0-111d.ngrok-free.app", {
-            autoConnect: false,
-            auth: {
-                token: "test",
-            },
-        })
-
-        socket.connect()
+        const socket = io("https://9781-2604-3d08-9d86-4700-6513-f248-64a0-111d.ngrok-free.app")
     </script>
     <script type="text/javascript">
 
