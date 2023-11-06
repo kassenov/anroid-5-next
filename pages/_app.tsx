@@ -28,13 +28,13 @@ export default function Home() {
 
   const connect = () => {
     const socket = io("https://9781-2604-3d08-9d86-4700-6513-f248-64a0-111d.ngrok-free.app", {
-    autoConnect: false,
-    auth: {
-      token: "test",
-    },
-  })
+      autoConnect: false,
+      auth: {
+        token: "test",
+      },
+    })
 
-  socket.connect()
+    socket.connect()
   }
 
   return (
