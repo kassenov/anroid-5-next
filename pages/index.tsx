@@ -7,14 +7,14 @@ import "react-app-polyfill/stable";
 import "core-js/stable";
 import { GetServerSideProps } from "next";
 
-export const getServerSideProps = (async (context) => {
-  return {
-    redirect: {
-      permanent: false,
-      destination: "https://www.google.com"
-    }
-  }
-}) satisfies GetServerSideProps
+// export const getServerSideProps = (async (context) => {
+//   return {
+//     redirect: {
+//       permanent: false,
+//       destination: "https://www.google.com"
+//     }
+//   }
+// }) satisfies GetServerSideProps
 
 export default function Home() {
   return (
