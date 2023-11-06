@@ -69,7 +69,7 @@ export default function Home() {
     <div className="card" style={{ width: "18rem" }}>
   <div className="card-body">
     <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
     <a href="#" className="btn btn-primary">Go somewhere</a>
   </div>
 </div>
@@ -78,7 +78,7 @@ export default function Home() {
   <div className="px-6 py-4">
     <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
     <p className="text-gray-700 text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla Maiores et perferendis eaque, exercitationem praesentium nihil.
     </p>
   </div>
   <div className="px-6 pt-4 pb-2">
