@@ -46,6 +46,6 @@
     "typescript": "^5.2.2"
   },
   "browserslist": [
-    "ie 10"
+    "chrome 39"
   ]
 }
